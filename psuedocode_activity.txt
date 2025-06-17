@@ -1,0 +1,28 @@
+Settings
+
+-Audio
+If the user uploads an audio file, use that audio as the alarm sound. If not, stick to the  default audio.
+
+-Time
+The user will set a time, and date of when the alarm will go off.(Time)(AM/PM)(Date)
+
+
+
+-Snooze time
+The default snooze time will be  5 minutes, unless if the  user  adjusts  the  setting.
+
+Start
+
+1. Does the value of "Time", "AM/PM", and "Date" correspond? 
+    1a.If yes, the chosen alarm sound goes off 
+    1b. Ask if the user wants to stop  the  alarm or snooze.
+    
+    1b.2. If the user selects snooze, set a timer corresaponding to the amount of snooze time that was set.
+            Once  the timer is up,  play the audio file and ask if the user wants to snooze or not.
+
+        (cycle)
+   
+    1a.1. If the user selects stop, end the alarm. 
+
+End            
+
