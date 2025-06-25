@@ -35,5 +35,19 @@ def inflation(item1):
     print(menu)
 print(inflation('Ice cream'))
 
+#last function
+def deflation(item1):
+    menu.update({item1: menu[item1]/1.5})
+    print(menu)
+print(inflation('Cheese'))
 
+#my own  function
 
+#this function will identify the cost of an item while the restaurant is on happy hour
+
+def happy_hour(item1):
+    discount = menu[item1]/2
+    #return discount
+    #print(discount)
+    print(f"The price of {item1} is ${discount} during happy hour.")
+print(happy_hour('Pizza'))
