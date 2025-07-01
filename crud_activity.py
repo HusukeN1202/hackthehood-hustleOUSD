@@ -30,7 +30,8 @@ def destroy(index):
         read(destroy)
 
 def list_all_recipes():
-    print(cookbook)
+    for i in range(len(cookbook)): 
+        print(cookbook[i])
 
 def main():
     while True:
