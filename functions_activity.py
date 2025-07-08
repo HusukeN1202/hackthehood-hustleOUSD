@@ -15,9 +15,9 @@ print(total_price('Pizza', 'Burger'))
 
 def price_difference(item1, item2):
     total_difference = menu[item1] - menu[item2]
-    return total_difference
+    return abs(total_difference)
     
-print((abs(price_difference('Pizza', 'Burger'))))
+print(price_difference('Pizza', 'Burger'))
 
 #next function
 #def inflation(item1): 
@@ -28,18 +28,18 @@ print((abs(price_difference('Pizza', 'Burger'))))
 #print(inflation('Pizza'))
 
 
-def inflation(item1): 
+def inflation(item1, multiplier): 
     #inflated_price = menu[item1] * 1.5
     #return inflated_price
-    menu.update({item1: menu[item1]*1.5})
+    menu.update({item1: menu[item1] * int(multiplier)})
     print(menu)
-print(inflation('Ice cream'))
+print(inflation('Ice cream', 1.5))
 
 #last function
-def deflation(item1):
-    menu.update({item1: menu[item1]/1.5})
+def deflation(item1, divisor):
+    menu.update({item1: menu[item1]/int(divisor)})
     print(menu)
-print(inflation('Cheese'))
+print(inflation('Cheese', 1.5))
 
 #my own  function
 
@@ -47,7 +47,12 @@ print(inflation('Cheese'))
 
 def happy_hour(item1):
     discount = menu[item1]/2
-    #return discount
-    #print(discount)
     print(f"The price of {item1} is ${discount} during happy hour.")
 print(happy_hour('Pizza'))
+
+# teju's lesson
+
+#def greet_student(name):
+    #message = ("Hello, " + name + "! Welcome to Week 4.")
+    #return message
+#print(greet_student("Teju"))
