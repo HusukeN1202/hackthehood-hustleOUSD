@@ -24,9 +24,9 @@ for x in list1:
 inventory =  ["tnt", "glass", "grass", "Netherite", "Waxed Lightly Weathered Chiseled Copper Stairs"]
 
 for i in inventory:
-   if i == "Netherite":
+    if i == "Netherite":
       print(f"You found {i}, congrats!")
-else:
+    else:
       print(f"You have {i}")
       
 
