@@ -1,4 +1,4 @@
-#Guessingn  Game - Husuke Nishioka
+#Guessing  Game - Husuke Nishioka
 
 import  random
 
